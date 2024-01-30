@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            function Pessoa(){
+                this.nome = 'Pedro';
+                this.idade = 23;
+                this.printNome = function(numero){
+                    alert(numero)
+                }
+                
+            }
+            var pessoa = new Pessoa();
+            //    pessoa.printNome(10);
+
+            function Animal(nome, tipo, peso){
+                this.nome = nome;
+                this.tipo = tipo;
+                this.peso = peso;
+            }
+
+            var cachorroLion = new Animal("Lion","Cachorro","12Kg")
+            var gatoJhon = new Animal("Jhon","Gato","6Kg")
+
+            
+            alert(cachorroLion.nome + cachorroLion.peso);
+            alert(gatoJhon.nome + gatoJhon.peso);
+        </script>
+    </body>
+</html>

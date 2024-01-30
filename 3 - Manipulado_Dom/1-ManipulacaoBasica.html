@@ -1,0 +1,26 @@
+<html>
+    <body>
+
+        <p>Olá Mundo 0!</p>
+        <p>Olá Mundo 1!</p>
+        <p>Olá Mundo 2!</p>
+        <p>Olá Mundo 3!</p>
+
+        <script>
+            var p  =document.getElementsByTagName('p');
+            
+            alert(p[0].innerHTML)
+           
+            for(var i=0; i<p.length; i++){
+                p[i].innerHTML = 'Manipulado via JS ' + i;
+            }
+            
+            
+           
+
+
+
+            
+        </script>
+    </body>
+</html>

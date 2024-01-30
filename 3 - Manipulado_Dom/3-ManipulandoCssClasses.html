@@ -1,0 +1,30 @@
+<html>
+
+<style>
+
+</style>
+
+<body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+
+    <script>
+        var elementos = document.getElementsByClassName('box');
+        var el = elementos[0];
+
+        for (var i = 0; i < elementos.length; i++) {
+            el = elementos[i];
+            el.style.width = 100;
+            el.style.height = 100;
+            el.style.backgroundColor ='#'+i+ 'f'+i+ 'c'+i+'f';
+            el.style.margin = 10;
+        }
+    </script>
+</body>
+
+</html>

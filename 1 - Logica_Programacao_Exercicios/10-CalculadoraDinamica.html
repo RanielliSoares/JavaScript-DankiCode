@@ -1,0 +1,45 @@
+<html>
+
+<body>
+    <script>
+
+        var n1 = prompt("Informe o primeiro número");
+        while(isNaN(n1)){
+            alert("Por favor digite um número válido!"); 
+            n1 = prompt("Informe o primeiro número");
+        }
+
+        var sinal = prompt("Informe o sinal da sua operação, +, -, * ou /: ");
+        while (sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/') {
+            alert("Por favor digite um operador de sinal válido!");
+            sinal = prompt("Informe o sinal da sua operação, +, -, * ou /: ");
+        }
+
+        var n2 = prompt("Informe o segundo número");
+        while(isNaN(n2)){
+            alert("Por favor digite um número válido!"); 
+            n2 = prompt("Informe o primeiro número");
+        }
+        
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2)
+
+        var resultadoFinal = 0;
+
+        if(sinal ==='+'){
+            resultadoFinal = n1 + n2;
+        }else if(sinal ==='-'){
+            resultadoFinal = n1 - n2;
+        }else if(sinal === '*'){
+            resultadoFinal = n1 * n2;
+        }else{
+            resultadoFinal = n1/n2;
+        }
+        alert('o resultado é: '+resultadoFinal.toFixed(2))
+
+
+
+    </script>
+</body>
+
+</html>

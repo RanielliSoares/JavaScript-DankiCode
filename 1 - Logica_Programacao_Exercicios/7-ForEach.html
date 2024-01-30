@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            var nomes = ["Maria", "Ricardo", "Felipe"]
+
+            /*
+            for(var i =0; i < (nomes.length); i++){
+                console.log(nomes[i])
+            }
+            */
+           nomes.forEach((value, index) => {
+            console.log(value + ' posição ' + index);
+           })
+
+           nomes.push("Pedro")
+           console.log('--------------------')
+           nomes.forEach((value, index) => {
+            console.log(value + ' posição ' + index);
+           })
+        </script>
+    </body>
+</html>
